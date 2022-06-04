@@ -42,9 +42,19 @@ mkdir data && mkdir output
 wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/proteomes/9606.tsv.gz -O data/9606.tsv.gz && gunzip data/9606.tsv.gz
 ```
 
+If `wget` is not installed, use curl:
+```
+curl ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/proteomes/9606.tsv.gz -o data/9606.tsv.gz && gunzip data/9606.tsv.gz
+```
+
 3. Download reviewed UniProt entries and unzip
 ```
 wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.dat.gz -O data/uniprot_sprot.dat.gz && gunzip data/uniprot_sprot.dat.gz
+```
+
+If `wget` is not installed, use curl:
+```
+curl ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.dat.gz -o data/uniprot_sprot.dat.gz && gunzip data/uniprot_sprot.dat.gz
 ```
 
 4. Give perl scripts execution permissions
